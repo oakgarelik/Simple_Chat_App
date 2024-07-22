@@ -7,7 +7,15 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mi Amor ❤️'),
+        leading: const Padding(
+          padding: EdgeInsets.all(4.0),
+          child: CircleAvatar(
+            backgroundImage: NetworkImage(
+                'https://cdn1.suno.ai/image_9abae681-ecc5-4774-ae3f-0e0de04ac773.png'),
+          ),
+        ),
+        centerTitle: false,
+        title: const Text('Darling ♥️'),
       ),
     );
   }
