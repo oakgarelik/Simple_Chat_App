@@ -25,7 +25,7 @@ class HerMessageBubble extends StatelessWidget {
 
         _ImageBubble(),
 
-        SizedBox(
+        const SizedBox(
           height: 10,
         )
 
@@ -47,6 +47,16 @@ class _ImageBubble extends StatelessWidget {
         width: size.width * 0.7,
         height: 150,
         fit: BoxFit.cover,
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+
+          return const Padding(
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+            child: SizedBox(
+              child: CircularProgressIndicator(),
+            ),
+          );
+        },
       ),
     );
   }
