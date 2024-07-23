@@ -26,14 +26,11 @@ class MessageFieldBox extends StatelessWidget {
         hintText: 'End your message with a "?"',
         suffixIcon: IconButton(
             onPressed: () {
-              final textValue = textController.value.text;
-              print('button: $textValue');
               textController.clear();
             },
             icon: const Icon(Icons.send_rounded)),
       ),
       onFieldSubmitted: (value) {
-        print('Submit value $value');
         textController.clear();
         focusNode.requestFocus();
       },
