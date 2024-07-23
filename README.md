@@ -1,16 +1,8 @@
-# yes_no_app
+# Yes No App
+A chat whit images and text fields application made with Flutter to learn about front-end development, this application is the second exercise of the Udemy Flutter course led by Full-Stack Developer & Teacher Fernando Herrera
 
-A new Flutter project.
+# Udemy Course
+If you're interested in learning this course, you can do so at:
 
-## Getting Started
+https://www.udemy.com/course/flutter-cero-a-experto/
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
