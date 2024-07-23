@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:yes_no_app/presentation/widgets/chat/my_message_bubble.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -20,6 +21,7 @@ class _SupBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Theme.of(context).primaryColor,
       leading: const Padding(
         padding: EdgeInsets.all(4.0),
         child: CircleAvatar(
@@ -45,7 +47,7 @@ class _ChatView extends StatelessWidget {
                 child: ListView.builder(
               itemCount: 100,
               itemBuilder: (context, index) {
-                return Text('Indice: $index');
+                return const MyMessageBubble();
               },
             )),
             const Text('World')

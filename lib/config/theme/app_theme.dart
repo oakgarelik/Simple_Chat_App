@@ -30,12 +30,12 @@ class AppTheme {
   final int selectedColor;
 
   AppTheme({this.selectedColor = 0})
-      : assert(selectedColor >= 0 && selectedColor < _colorsThemes.length - 1,
+      : assert(selectedColor >= 0 && selectedColor < _colorsThemes.length,
             'Colors must be between 0 and ${_colorsThemes.length - 1}');
 
   ThemeData theme() {
     return ThemeData(
-      useMaterial3: true,
+      useMaterial3: false,
       colorSchemeSeed: _colorsThemes[selectedColor],
     );
   }
