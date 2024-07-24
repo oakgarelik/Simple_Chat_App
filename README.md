@@ -14,6 +14,7 @@ A chat whit images and text fields application (non functional, just design)  ma
 - Expanded
 - Image
 - ClipRRect
+- Loading Builder
 
 # Udemy Course
 If you're interested in learning this course, you can do so at:
